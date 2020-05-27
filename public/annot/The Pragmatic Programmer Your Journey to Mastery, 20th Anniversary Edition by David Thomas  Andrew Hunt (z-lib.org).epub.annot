@@ -1,0 +1,62 @@
+
+<annotationSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://ns.adobe.com/digitaleditions/annotations">
+    <publication>
+        <dc:identifier>9780135956977</dc:identifier>
+        <dc:title>The Pragmatic Programmer: your journey to mastery, 20th Anniversary Edition, 2nd Edition</dc:title>
+        <dc:creator>Andrew Hunt</dc:creator>
+        <dc:description>&lt;span&gt;&lt;div&gt;&lt;blockquote&gt;&lt;p&gt;&quot;One of the most significant books in my life.&quot; &lt;i&gt;—Obie Fernandez, Author,&lt;/i&gt; The Rails Way&lt;br/&gt;&lt;br/&gt;&quot;Twenty years ago, the first edition of The Pragmatic Programmer completely changed the trajectory of my career. This new edition could do the same for yours.&quot; &lt;i&gt;—Mike Cohn, Author of&lt;/i&gt; Succeeding with Agile&lt;i&gt;,&lt;/i&gt; Agile Estimating and Planning&lt;i&gt;, and&lt;/i&gt; User Stories Applied&lt;br/&gt;&lt;br/&gt;&quot;. . . filled with practical advice, both technical and professional, that will serve you and your projects well for years to come.&quot; &lt;i&gt;—Andrea Goulet, CEO, Corgibytes, Founder, LegacyCode.Rocks&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&quot;. . . lightning does strike twice, and this book is proof.&quot; &lt;i&gt;—VM (Vicky) Brasseur, Director of Open Source Strategy, Juniper Networks&lt;/i&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;i&gt;&lt;b&gt;The Pragmatic Programmer&lt;/b&gt;&lt;/i&gt; is one of those rare tech books you'll read, re-read, and read again over the years. Whether you're new to the field or an experienced practitioner, you'll come away with fresh insights each and every time.&lt;br/&gt;&lt;br/&gt;Dave Thomas and Andy Hunt wrote the first edition of this influential book in 1999 to help their clients create better software and rediscover the joy of coding. These lessons have helped a generation of programmers examine the very essence of software development, independent of any particular language, framework, or methodology, and the Pragmatic philosophy has spawned hundreds of books, screencasts, and audio books, as well as thousands of careers and success stories.&lt;br/&gt;&lt;br/&gt;Now, twenty years later, this new edition re-examines what it means to be a modern programmer. Topics range from personal responsibility and career development to architectural techniques for keeping your code flexible and easy to adapt and reuse. Read this book, and you'll learn how to:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fight software rot&lt;/li&gt;&lt;li&gt;Learn continuously&lt;/li&gt;&lt;li&gt;Avoid the trap of duplicating knowledge&lt;/li&gt;&lt;li&gt;Write flexible, dynamic, and adaptable code&lt;/li&gt;&lt;li&gt;Harness the power of basic tools&lt;/li&gt;&lt;li&gt;Avoid programming by coincidence&lt;/li&gt;&lt;li&gt;Learn real requirements&lt;/li&gt;&lt;li&gt;Solve the underlying problems of concurrent code&lt;/li&gt;&lt;li&gt;Guard against security vulnerabilities&lt;/li&gt;&lt;li&gt;Build teams of Pragmatic Programmers&lt;/li&gt;&lt;li&gt;Take responsibility for your work and career&lt;/li&gt;&lt;li&gt;Test ruthlessly and effectively, including property-based testing&lt;/li&gt;&lt;li&gt;Implement the Pragmatic Starter Kit&lt;/li&gt;&lt;li&gt;Delight your users&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Written as a series of self-contained sections and filled with classic and fresh anecdotes, thoughtful examples, and interesting analogies, &lt;i&gt;&lt;b&gt;The Pragmatic Programmer&lt;/b&gt;&lt;/i&gt; illustrates the best approaches and major pitfalls of many different aspects of software development. Whether you're a new coder, an experienced programmer, or a manager responsible for software projects, use these lessons daily, and you'll quickly see improvements in personal productivity, accuracy, and job satisfaction. You'll learn skills and develop habits and attitudes that form the foundation for long-term success in your career.&lt;br/&gt;&lt;br/&gt;You'll become a Pragmatic Programmer.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Register your book for convenient access to downloads, updates, and/or corrections as they become available. See inside book for details.&lt;/i&gt;&lt;/p&gt;&lt;/div&gt;&lt;/span&gt;</dc:description>
+        <dc:language>en-US</dc:language>
+    </publication>
+    <annotation>
+        <dc:identifier>urn:uuid:29d03c2c-f320-494d-b423-76fd0110bb9d</dc:identifier>
+        <dc:date>2020-05-04T10:37:09Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/f_0018.xhtml#point(/1/4/2/1/4/1/1:1)" end="OEBPS/Text/f_0018.xhtml#point(/1/4/2/1/5:0)" progress="0.148784">
+                <text>
+I’m not in this world to live up to your expectations and you’re not in
+this world to live up to mine.
+
+
+ Bruce Lee
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:d6f33bc0-56e4-4760-8ee8-d7c0651a2ff8</dc:identifier>
+        <dc:date>2020-05-04T17:40:26Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/f_0021.xhtml#point(/1/4/2/1/24/1:9)" end="OEBPS/Text/f_0021.xhtml#point(/1/4/2/1/24/5:62)" progress="0.184549">
+                <text>time to bring out the stones. Work out what you can
+reasonably ask for. Develop it well. Once you’ve got it, show people,
+and let them marvel. Then say “of course, it would be better
+if we added…’’ Pretend it’s not important. </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0222686d-3f7c-4f86-93be-829e910655a0</dc:identifier>
+        <dc:date>2020-05-04T17:39:50Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/f_0021.xhtml#point(/1/4/2/1/24/5:157)" end="OEBPS/Text/f_0021.xhtml#point(/1/4/2/1/24/5:278)" progress="0.184549">
+                <text>People find it easier to join an ongoing success.  Show them a
+glimpse of the future and you’ll get them to rally
+aroun</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8d62651a-9bd3-4474-b69c-3c695f85efd4</dc:identifier>
+        <dc:date>2020-05-05T14:04:52Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/f_0022.xhtml#point(/1/4/2/1/25:1)" end="OEBPS/Text/f_0022.xhtml#point(/1/4/2/1/28/1:43)" progress="0.197425">
+                <text>Know When to Stop
+ In some ways, programming is like painting.</text>
+            </fragment>
+        </target>
+    </annotation>
+</annotationSet>
