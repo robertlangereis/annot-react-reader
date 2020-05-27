@@ -1,68 +1,108 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { Progress } from 'reactstrap'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './fileGrabber.css'
+
 
 export default function FileGrabber () {
   const [selectedFiles, setSelectedFiles] = useState(null)
-  
-  const [loaded, setLoaded] = useState(null)
-  
-  const maxSelectFile= event =>{
-    let files = event.target.files // create file object
-    if (files.length > 3) { 
-      const msg = 'Only 3 images can be uploaded at a time'
-      event.target.value = null // discard selected file
-      console.log(msg)
-      return false;
-    }
-    return true;
-  }
-  
- 
 
-  const checkMimeType= event =>{
-    //getting file object
-    let files = event.target.files 
-    
-    let fileNames = []
-    let extensions = []
-    Array.from(files).forEach(file =>{
-      const name = file.name;
-      const lastDot = name.lastIndexOf('.')
-      const fileName = name.substring(0, lastDot);
-      const ext = name.substring(lastDot + 1);
-      fileNames.push(fileName)
-      extensions.push(ext)
-    })
-    let err = 'This webapplication only supported files with .annot format\n'
-    if(extensions.map(ext => ext !== 'annot')) {
-      console.log(err)
+  const [loaded, setLoaded] = useState(null)
+
+  const maxSelectFile = files => {
+    if (files.length > 3) {
+      setSelectedFiles(null) // discard selected file(s)
+      toast.error('Only 3 images can be uploaded at a time')
+      return false
+    }
+    return true
+  }
+
+  const checkFileSize = files => {
+    const maxSize = 15000
+    const filesTooBig = Array.from(files).every(file => file.size > maxSize)
+    if (filesTooBig) {
+      setSelectedFiles(null) // discard selected file(s)
+      toast.error(
+        '(One of) the uploaded file(s) is too large, please pick a smaller file\n'
+      )
+      return false
+    }
+    return true
+  }
+
+  const checkMimeType = files => {
+    const isAnnotFile = Array.from(files)
+      .map(file => {
+        const lastDot = file.name.lastIndexOf('.')
+        const ext = file.name.substring(lastDot + 1)
+        return ext
+      })
+      .every(ext => ext === 'annot')
+    if (!isAnnotFile) {
+      setSelectedFiles(null) // discard selected file(s)
+      toast.error(
+        'This webapplication only supports .annot format files'
+      )
       return false
     }
     return true
   }
 
   const onChangeHandler = event => {
-    if(maxSelectFile(event) && checkMimeType(event)) setSelectedFiles(event.target.files)
+    const files = event.target.files
+    if (maxSelectFile(files) && checkMimeType(files) && checkFileSize(files))
+      setSelectedFiles(files)
     setLoaded(0)
   }
 
   const onClickHandler = () => {
-    const data = new FormData()
-    Array.from(selectedFiles).forEach(file =>
-      data.append('file', file)
-    )
-    axios
+    let data = new FormData()
+    selectedFiles && Array.from(selectedFiles).forEach(file => data.append('file', file))
+    if(selectedFiles !==null)axios
       .post('http://localhost:8000/upload', data, {
-        // receive two    parameter endpoint url ,form data
+        onUploadProgress: ProgressEvent => {
+          setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
+        }
       })
       .then(res => {
-        // then print response status
+        toast.success('upload success')
         console.log(res.statusText)
       })
+      .catch(err => { 
+        toast.error('upload fail')
+        console.error(err)
+
+    })
+    else toast.error('upload fail')
   }
+  const onClickConverter = () => {
+    if(selectedFiles !==null)axios
+      .post('http://localhost:8000/convert', {
+        onUploadProgress: ProgressEvent => {
+          setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
+        }
+      })
+      .then(res => {
+        console.log(res.data)
+        toast.success('upload success')
+        console.log(res.statusText)
+      })
+      .catch(err => { 
+        toast.error('upload fail')
+        console.error(err)
+
+    })
+    else toast.error('upload fail')
+  }
+
   return (
     <div className='container'>
+      <div className="form-group">
+       <ToastContainer />
+      </div>
       <div className='row'>
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
@@ -74,12 +114,24 @@ export default function FileGrabber () {
                 multiple
                 onChange={onChangeHandler}
               />
+              <div className='form-group'>
+                <Progress max='100' color='success' value={loaded}>
+                  {Math.round(loaded, 2)}%
+                </Progress>
+              </div>
               <button
                 type='button'
                 className='btn btn-success btn-block'
                 onClick={onClickHandler}
               >
                 Upload
+              </button>
+              <button
+                type='button'
+                className='btn btn-primary btn-block'
+                onClick={onClickConverter}
+              >
+                Convert
               </button>
             </div>
           </form>

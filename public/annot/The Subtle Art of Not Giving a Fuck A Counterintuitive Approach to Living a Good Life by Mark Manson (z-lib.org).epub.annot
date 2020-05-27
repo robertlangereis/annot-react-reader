@@ -1,0 +1,560 @@
+
+<annotationSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://ns.adobe.com/digitaleditions/annotations">
+    <publication>
+        <dc:identifier>9780062457738</dc:identifier>
+        <dc:title>The Subtle Art of Not Giving a F*ck</dc:title>
+        <dc:creator>Mark Manson</dc:creator>
+        <dc:description>&lt;p&gt;In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be &quot;positive&quot; all the time so that we can truly become better, happier people.&lt;/p&gt;&lt;p&gt;For decades, we've been told that positive thinking is the key to a happy, rich life. &quot;F**k positivity,&quot; Mark Manson says. &quot;Let's be honest, shit is f**ked and we have to live with it.&quot; In his wildly popular Internet blog, Mason doesn't sugarcoat or equivocate. He tells it like it is&amp;#8212;a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let's-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up. &lt;/p&gt;&lt;p&gt;Manson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons...</dc:description>
+        <dc:language>en</dc:language>
+    </publication>
+    <annotation>
+        <dc:identifier>urn:uuid:77cf905b-317e-4c07-8029-be479e12ec59</dc:identifier>
+        <dc:date>2020-04-16T10:22:09Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/81:1)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/84:0)" progress="0.0810811">
+                <text>The desire for more positive experience is itself a negative experience. And, paradoxically, the acceptance of one’s negative experience is itself a positive experience.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:1297ed2d-d86c-4b44-a18f-436864a075f5</dc:identifier>
+        <dc:date>2020-04-16T10:29:14Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/104/3:92)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/106:0)" progress="0.0878378">
+                <text>The avoidance of suffering is a form of suffering. The avoidance of struggle is a struggle. The denial of failure is a failure. Hiding what is shameful is itself a form of shame.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:833e9da8-db16-4065-92cd-c5ee4e9059ac</dc:identifier>
+        <dc:date>2020-04-16T10:25:39Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/88/1:190)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/88/1:253)" progress="0.0810811">
+                <text>You will never live if you are looking for the meaning of life.</text>
+            </fragment>
+        </target>
+        <content>
+            <dc:date>2020-04-16T10:25:39Z</dc:date>
+            <text>Fit is zo waar hier heb ik afgelopen jaar in vasrt gezeten. Nihilisne wsnt niets doet er dan meer toe. Leef gewoon. Stop met de zoektochr naar betekenis.</text>
+        </content>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:2ba903d9-5cdf-48da-9eba-d31f2f2762c7</dc:identifier>
+        <dc:date>2020-04-16T10:27:45Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/102/3:247)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/102/3:350)" progress="0.0878378">
+                <text>Being open with your insecurities paradoxically makes you more confident and charismatic around others.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:781eed32-7c32-426f-99a0-b822a6b44d81</dc:identifier>
+        <dc:date>2020-04-16T10:20:02Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/76/1:313)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/78:0)" progress="0.0743243">
+                <text>Our crisis is no longer material; it’s existential, it’s spiritual. We have so much fucking stuff and so many opportunities that we don’t even know what to give a fuck about anymore.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:1631b2a9-12c7-4a18-967b-0ea0bf2234f6</dc:identifier>
+        <dc:date>2020-04-16T10:19:04Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/72/1:44)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/74:0)" progress="0.0743243">
+                <text>short-circuit the Feedback Loop from Hell; you say to yourself, “I feel like shit, but who gives a fuck?” And then, as if sprinkled by magic fuck-giving fairy dust, you stop hating yourself for feeling so bad.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:2bd40050-b419-4720-91b6-4361978cd8fa</dc:identifier>
+        <dc:date>2020-04-16T10:27:10Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/98/1:27)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/100:0)" progress="0.0878378">
+                <text>when you care less about something, you do better at it? Notice how it’s often the person who is the least invested in the success of something that actually ends up achieving it? Notice how sometimes when you stop giving a fuck, everything seems to fall into place?
+</text>
+            </fragment>
+        </target>
+        <content>
+            <dc:date>2020-04-16T10:27:10Z</dc:date>
+            <text>Ik met hardlopwn. Werkt ook zo met mediteren.</text>
+        </content>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:fa0a026a-c4df-4dff-9c94-dd6d73ae588c</dc:identifier>
+        <dc:date>2020-04-16T10:46:49Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/112/1:73)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/112/1:102)" progress="0.0945946">
+                <text>The major switch in careers; </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:20a7c046-7703-4641-aeb8-14989a5e0ceb</dc:identifier>
+        <dc:date>2020-04-16T10:11:05Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/54/1:15)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/54/1:38)" progress="0.0675676">
+                <text>Feedback Loop from Hell</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:9c1a7c61-c1ef-463c-93bb-80ef0d7cd786</dc:identifier>
+        <dc:date>2020-04-16T10:28:13Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/104/1:54)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/104/2/1:90)" progress="0.0878378">
+                <text>Everything worthwhile in life is won through surmounting the associated negative experienc</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0560b7c9-4c64-4120-ad5f-6e4ad9d2704d</dc:identifier>
+        <dc:date>2020-04-16T10:50:11Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/124/1:238)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/124/1:288)" progress="0.101351">
+                <text>pick and choose what matters to you and what does </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:63540c3e-0967-427d-8bca-903616cf6ca0</dc:identifier>
+        <dc:date>2020-04-16T10:46:27Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/110/1:431)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/112:0)" progress="0.0945946">
+                <text>Same with deciding to sell most of my possessions and move to South America. Fucks given? None. Just went and did it.
+</text>
+            </fragment>
+        </target>
+        <content>
+            <dc:date>2020-04-16T10:46:27Z</dc:date>
+            <text>florence . Rome.</text>
+        </content>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:488fa8e3-76da-45a8-b556-9a352697ec79</dc:identifier>
+        <dc:date>2020-04-16T16:50:42Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/170/1:21)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/170/1:136)" progress="0.121622">
+                <text>finding something important and meaningful in your life is perhaps the most productive use of your time and energy.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:b04f03cc-ff82-42e6-b2de-2335a9e50e0b</dc:identifier>
+        <dc:date>2020-04-16T16:44:18Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/154/1:55)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/154/1:184)" progress="0.114865">
+                <text>. You can’t be an important and life-changing presence for some people without also being a joke and an embarrassment to others</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:7f1178d1-06d5-436d-8a12-2f9d8048533e</dc:identifier>
+        <dc:date>2020-04-16T20:26:18Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/198/1:119)" end="OEBPS/text/9780062457738_Chapter_1.xhtml#point(/1/4/2/198/1:313)" progress="0.135135">
+                <text>practical enlightenment as becoming comfortable with the idea that some suffering is always inevitable—that no matter what you do, life is comprised of failures, loss, regrets, and even death.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:72b4c559-1166-4f3a-968e-289288561252</dc:identifier>
+        <dc:date>2020-04-16T20:31:33Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/34/1:136)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/34/1:211)" progress="0.148649">
+                <text>pain and loss are inevitable and we should let go of trying to resist them.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:98e8876b-75e4-41ad-a785-0649469d7152</dc:identifier>
+        <dc:date>2020-04-16T20:30:18Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/24/1:181)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/24/1:245)" progress="0.148649">
+                <text>there is no value in suffering when it’s done without purpose.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:81fb743b-88b5-4c1a-969f-0ca26b3e0f7a</dc:identifier>
+        <dc:date>2020-04-16T20:34:37Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/52/3:42)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/52/3:155)" progress="0.155405">
+                <text> it’s the mildly dissatisfied and insecure creature that’s going to do the most work to innovate and survive.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:657d5fc7-be42-4db6-9a61-dd7834ac5d1d</dc:identifier>
+        <dc:date>2020-04-16T20:34:24Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/52/1:37)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/52/1:125)" progress="0.155405">
+                <text>suffering is biologically useful. It is nature’s preferred agent for inspiring change.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:a2ba6c00-d4f2-44e0-86d2-b8ad6cdf677d</dc:identifier>
+        <dc:date>2020-04-16T20:37:24Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/62/1:389)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/64:0)" progress="0.168919">
+                <text>the emotional pain of rejection or failure teaches us how to avoid making the same mistakes in the future.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:d19cd220-6ced-4852-8f17-73ed18576595</dc:identifier>
+        <dc:date>2020-04-16T20:38:45Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/72/1:3)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/72/1:47)" progress="0.168919">
+                <text>Don’t hope for a life without problems,”</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:70e36c02-6ffd-474f-8063-c9fbc1a6a504</dc:identifier>
+        <dc:date>2020-04-16T20:39:28Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/72/1:92)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/72/1:139)" progress="0.168919">
+                <text>Instead, hope for a life full of good problems.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:f3091298-ea4c-4028-a07b-e28f08849601</dc:identifier>
+        <dc:date>2020-04-16T20:34:56Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/52/3:364)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/53:0)" progress="0.155405">
+                <text>our own pain and misery aren’t a bug of human evolution; they’re a feature.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8dbd6ea7-d003-4908-ac5f-b47472e58723</dc:identifier>
+        <dc:date>2020-04-16T20:42:48Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/86/3:21)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/87:0)" progress="0.175676">
+                <text>True happiness occurs only when you find the problems you enjoy having and enjoy solving.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:c985ba37-f84d-407c-98c0-406b1053dd08</dc:identifier>
+        <dc:date>2020-04-16T20:40:49Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/78/3:412)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/81:0)" progress="0.175676">
+                <text>
+ Problems never stop; they merely get exchanged and/or upgraded.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8e96b879-db02-46cc-a0bf-b4f207595144</dc:identifier>
+        <dc:date>2020-04-16T20:44:16Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/90/1:166)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/92:0)" progress="0.182432">
+                <text>fuck things up in at least one of two ways:
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:16089d10-c577-4db7-8ed0-87dbbc2fdebb</dc:identifier>
+        <dc:date>2020-04-16T20:41:54Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/82/3:64)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/84/1:151)" progress="0.175676">
+                <text>
+ To be happy we need something to solve. Happiness is therefore a form of action; it’s an activity, not something that is passively bestowed upon you,</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:79ac9291-8d6b-4183-b1eb-9ea79ad85458</dc:identifier>
+        <dc:date>2020-04-16T20:44:25Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/94/1:8)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/94/3:0)" progress="0.182432">
+                <text>Victim Mentality.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0ccb2b5c-b744-4326-8eea-fe921b24becf</dc:identifier>
+        <dc:date>2020-04-16T20:44:21Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/92/1:8)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/92/3:0)" progress="0.182432">
+                <text>Denial.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:6475ff92-6e2a-49f4-b1a6-bd798272b595</dc:identifier>
+        <dc:date>2020-04-16T20:44:03Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/89:1)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/90/1:70)" progress="0.182432">
+                <text>Whatever your problems are, the concept is the same: solve problems; b</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:becf6fbf-e20a-43b4-978e-9de6a195eb8c</dc:identifier>
+        <dc:date>2020-04-16T20:41:06Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/81:1)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/82/1:70)" progress="0.175676">
+                <text>Happiness comes from solving problems. The keyword here is “solving.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:69835131-afcb-4fac-b1e4-5f56fe1c298c</dc:identifier>
+        <dc:date>2020-04-16T20:42:36Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/85:1)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/86/1:100)" progress="0.175676">
+                <text>Happiness is a constant work-in-progress, because solving problems is a constant work-in-progress—</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:acb873e6-fc8c-4984-adfc-be4781fa148c</dc:identifier>
+        <dc:date>2020-04-16T20:48:56Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/110/11:45)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/112:0)" progress="0.189189">
+                <text>Therefore, we shouldn’t always trust our own emotions. In fact, I believe we should make a habit of questioning them.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:9985c8db-59c0-481a-ab42-fe65ab0ff829</dc:identifier>
+        <dc:date>2020-04-16T20:48:04Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/108/1:204)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/108/3:0)" progress="0.189189">
+                <text>, if you feel crappy it’s because your brain is telling you that there’s a problem that’s unaddressed or unresolved. In other words, negative emotions are a call to action</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8b8737eb-a6c7-479f-b97e-9bdd22094ece</dc:identifier>
+        <dc:date>2020-04-16T20:47:33Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/106/2:171)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/108:0)" progress="0.182432">
+                <text>Emotions are simply biological signals designed to nudge you in the direction of beneficial change.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:d7e58933-ce17-475a-b735-2e712ad0f55d</dc:identifier>
+        <dc:date>2020-04-17T10:32:51Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/120/3:150)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/122:0)" progress="0.195946">
+                <text>What we gain is also what we lose. What creates our positive experiences will define our negative experiences.
+</text>
+            </fragment>
+        </target>
+        <content>
+            <dc:date>2020-04-17T10:32:51Z</dc:date>
+            <text>Nieuw huis, nieuwe kosten en versantwoordelijkheden</text>
+        </content>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:6044dbf1-03f0-4dcd-87d2-45d466faa5d5</dc:identifier>
+        <dc:date>2020-04-17T21:19:22Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/140/1:393)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/142:0)" progress="0.202703">
+                <text>, the solution lies in the acceptance and active engagement of that negative experience—not the avoidance of it, not the salvation from it.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:5305df5c-bc9d-40dd-bdf8-481196d9dd0f</dc:identifier>
+        <dc:date>2020-04-17T21:22:03Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/146/1:37)" end="OEBPS/text/9780062457738_Chapter_2.xhtml#point(/1/4/2/148:0)" progress="0.202703">
+                <text>you don’t end up attracting someone amazing without appreciating the emotional turbulence that comes with weathering rejections, building the sexual tension that never gets released, and staring blankly at a phone that never rings. It’s part of the game of love. You can’t win if you don’t play.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:1cbfbefa-e8f0-4deb-b48a-a11178835397</dc:identifier>
+        <dc:date>2020-04-17T22:31:28Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/43:1)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/44/5:13)" progress="0.243243">
+                <text>The true measurement of self-worth is not how a person feels about her positive experiences, but rather how she feels about her negative experiences.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:77e1df72-ba93-4616-a1c6-b4454c833229</dc:identifier>
+        <dc:date>2020-04-26T10:32:44Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/168/2:359)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/168/2:584)" progress="0.290541">
+                <text>The more exposed we are to opposing viewpoints, the more we seem to get upset that those other viewpoints exist. The easier and more problem-free our lives become, the more we seem to feel entitled for them to get even better</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:ec1eaf72-8fe9-4d95-b03f-5d9147f36bd6</dc:identifier>
+        <dc:date>2020-04-26T10:21:39Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/126/1:403)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/128/1:190)" progress="0.27027">
+                <text>
+ The problem with my home life back then was not all of the horrible things that were said or done; rather, it was all of the horrible things that needed to be said and done but weren’t. My</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8a70c383-63f7-4e26-b6fc-9705ceb80367</dc:identifier>
+        <dc:date>2020-04-26T13:10:54Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/198/1:85)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/200:0)" progress="0.304054">
+                <text>The Internet has not just open-sourced information; it has also open-sourced insecurity, self-doubt, and shame.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:526aab49-00a3-4ffe-bcbe-5746b8e411ff</dc:identifier>
+        <dc:date>2020-04-26T13:07:10Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/186/1:101)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/186/3:215)" progress="0.304054">
+                <text>. And because we’re all quite average most of the time, the deluge of exceptional information drives us to feel pretty damn insecure and desperate, because clearly we are somehow not good enough. So more and more we feel the need to compensate through entitlement and addiction. We </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8dd233d3-3525-40bb-b404-89f13c624b60</dc:identifier>
+        <dc:date>2020-04-26T13:24:52Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/216/1:104)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/216/3:123)" progress="0.317568">
+                <text>accepting the bland and mundane truths of life: truths such as “Your actions actually don’t matter that much in the grand scheme of things” and “The vast majority of your life will be boring and not noteworthy, and that’s okay</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:be01b99c-319d-4350-8db9-0ea53c251c71</dc:identifier>
+        <dc:date>2020-04-26T13:26:05Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/218/1:306)" end="OEBPS/text/9780062457738_Chapter_3.xhtml#point(/1/4/2/220:0)" progress="0.317568">
+                <text>the knowledge and acceptance of your own mundane existence will actually free you to accomplish what you truly wish to accomplish, without judgment or lofty expectations.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:eda518dd-fd97-421b-b111-72e2e7e5d83a</dc:identifier>
+        <dc:date>2020-04-27T20:03:48Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/154/3:69)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/154/3:215)" progress="0.371622">
+                <text>What is objectively true about your situation is not as important as how you come to see the situation, how you choose to measure it and value it.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:ab76d201-2878-4cf8-9fde-c619b8eb8ffc</dc:identifier>
+        <dc:date>2020-04-27T20:14:05Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/181:1)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/182/1:81)" progress="0.385135">
+                <text>Our values determine the metrics by which we measure ourselves and everyone else.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:716215b1-11ff-4f53-9b3c-f04c2d79c89b</dc:identifier>
+        <dc:date>2020-04-27T20:40:30Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/240/1:81)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/242/1:121)" progress="0.405405">
+                <text>the truth is, sometimes life sucks, and the healthiest thing you can do is admit it.
+ Denying negative emotions leads to experiencing deeper and more prolonged negative emotions and to emotional dysfunction.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:010f8a19-9e32-49e6-ad76-4dce02c01c14</dc:identifier>
+        <dc:date>2020-04-27T20:43:13Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/252/1:622)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/256:0)" progress="0.418919">
+                <text>
+ As Freud once said, “One day, in retrospect, the years of struggle will strike you as the most beautiful.”
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:8c4a42ce-a74a-4e94-918a-5512719dce48</dc:identifier>
+        <dc:date>2020-04-27T20:45:25Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/266/3:103)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/270:0)" progress="0.418919">
+                <text>(Side Note: As a rule, people who are terrified of what others think about them are actually terrified of all the shitty things they think about themselves being reflected back at them.)
+ Some examples of good, healthy values: honesty, innovation, vulnerability, standing up for oneself, standing up for others, self-respect, curiosity, charity, humility, creativity.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0f3d39e6-4980-46a0-85c4-27b7121d85cf</dc:identifier>
+        <dc:date>2020-04-27T20:50:38Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/276/3:54)" end="OEBPS/text/9780062457738_Chapter_4.xhtml#point(/1/4/2/278:0)" progress="0.425676">
+                <text>The question is your priorities. What are the values that you prioritize above everything else, and that therefore influence your decision-making more than anything else?
+</text>
+            </fragment>
+        </target>
+    </annotation>
+</annotationSet>

@@ -1,0 +1,51 @@
+
+<annotationSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://ns.adobe.com/digitaleditions/annotations">
+    <publication>
+        <dc:identifier>48aafc37-89df-4feb-a1be-90034ddb69fc</dc:identifier>
+        <dc:title>Life Purpose - Mark Manson</dc:title>
+        <dc:creator>Mark Manson</dc:creator>
+        <dc:language>en</dc:language>
+    </publication>
+    <annotation>
+        <dc:identifier>urn:uuid:124d84ba-1188-4397-84e7-443b6da6c60f</dc:identifier>
+        <dc:date>2020-04-30T08:56:34Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="GoogleDoc/LifePurposeePub_split_002.xhtml#point(/1/4/57/1:7)" end="GoogleDoc/LifePurposeePub_split_002.xhtml#point(/1/4/57/16/3:0)" progress="0.347826">
+                <text>Finding the 
+      
+        passion
+      
+       and 
+      
+        purpose
+      
+       in your life is a trial-by-fire process. You don’t simply wake up one day and become happy doing one thing forever and ever. Like death, it’s a constant work-in-progress. You must 
+      
+        try something
+      
+      , pay attention to how it feels, 
+      
+        adjust and then try again</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:86b56808-7b59-42ed-ac24-d95c83aa648f</dc:identifier>
+        <dc:date>2020-04-30T09:09:26Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="GoogleDoc/LifePurposeePub_split_002.xhtml#point(/1/4/65/2/1:146)" end="GoogleDoc/LifePurposeePub_split_002.xhtml#point(/1/4/65/11:0)" progress="0.391304">
+                <text>Just like 
+      
+        choosing a spouse
+      
+      , it’s not choosing someone who makes you happy all the time, it’s 
+      
+        choosing somebody
+      
+       who you want to be with even when they’re pissing you off.</text>
+            </fragment>
+        </target>
+    </annotation>
+</annotationSet>
