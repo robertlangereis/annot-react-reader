@@ -51,7 +51,7 @@ app.post('/convert',async(req, res) => {
     const fileObject = JSON.parse(json);
     // const test = []
     // test.push(fileObject)
-    resolve(fileObject && fileObject)
+    resolve(fileObject && fileObject.annotationSet)
   })
 });
 })

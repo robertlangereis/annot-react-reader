@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
+import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './fileGrabber.css'
@@ -10,9 +11,10 @@ export default function FileGrabber () {
   const [selectedFiles, setSelectedFiles] = useState(null)
 
   const [loaded, setLoaded] = useState(null)
+  const [document, setDocument] = useState(null)
 
   const maxSelectFile = files => {
-    if (files.length > 3) {
+    if (files.length > 1) {
       setSelectedFiles(null) // discard selected file(s)
       toast.error('Only 3 images can be uploaded at a time')
       return false
@@ -86,7 +88,17 @@ export default function FileGrabber () {
         }
       })
       .then(res => {
-        console.log(res.data)
+        // res.data.map(item => console.log(item))
+        // res.data
+        // console.log('res.data', res.data);
+        // console.log('res.data.publication.title', res.data.publication['dc:title']);
+        // console.log('res.data.publication.author', res.data.publication['dc:creator']);
+        // console.log('res.data.annotation', res.data.annotations);
+        setDocument({
+          title: res.data.publication['dc:title'],
+          author: res.data.publication['dc:creator'],
+          annotations: res.data.annotation
+        })
         toast.success('upload success')
         console.log(res.statusText)
       })
@@ -107,7 +119,7 @@ export default function FileGrabber () {
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
             <div className='form-group files color'>
-              <label>Upload Your File </label>
+              <label htmlFor="files">Upload Your File </label>
               <input
                 type='file'
                 name='file'
@@ -135,6 +147,9 @@ export default function FileGrabber () {
               </button>
             </div>
           </form>
+          {/* {document && <Annotations title={document.title} author={document.author} annotations={document.annotations}/>} */}
+          {document && console.log('document', document)}
+          
         </div>
       </div>
     </div>

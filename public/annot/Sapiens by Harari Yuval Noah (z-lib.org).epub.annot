@@ -1,0 +1,163 @@
+
+<annotationSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://ns.adobe.com/digitaleditions/annotations">
+    <publication>
+        <dc:identifier>ISBN = 978-94-920-1167-1</dc:identifier>
+        <dc:title>Sapiens</dc:title>
+        <dc:creator>Yuval Noah Harari</dc:creator>
+        <dc:description>&lt;div&gt;&lt;p class=&quot;description&quot;&gt;Honderdduizend jaar geleden leefde de Homo sapiens nog een tamelijk onbekommerd bestaan in een uithoek van het Afrikaanse continent en deelde hij de planeet met ten minste vijf andere menssoorten. Maar op een zeker moment onderging het brein van deze mens een ingrijpende verandering: nu kon hij zich plots verbeelden dat het gras elders wel eens groener zou kunnen zijn, en dus maakte hij zich op om de wereld te veroveren.&lt;/p&gt;&lt;p class=&quot;description&quot;&gt;In &lt;i&gt;Sapiens&lt;/i&gt; neemt Yuval Noah Harari ons mee op een fascinerende reis door de geschiedenis van de mensheid. Wie zijn we? Waar komen we vandaan? En hoe zijn we zo geworden als we nu zijn? In zijn aanstekelijke relaas laat Harari ons kennismaken met het meest dominante wezen op aarde: de mens.&lt;/p&gt;&lt;/div&gt;</dc:description>
+        <dc:language>nl</dc:language>
+    </publication>
+    <annotation>
+        <dc:identifier>urn:uuid:d87960c7-d24d-40a3-ada8-0995b84e6f82</dc:identifier>
+        <dc:date>2020-03-21T13:40:46Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0008.xhtml#point(/1/4/2/56/3:471)" end="OEBPS/Text/Section0008.xhtml#point(/1/4/2/56/3:590)" progress="0.032419">
+                <text>Als een regering die geld van defensie naar onderwijs overboekt, hevelden mensen energie van biceps over naar neuronen.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:cc37e502-fb6c-465f-86c4-8114fe4ded7f</dc:identifier>
+        <dc:date>2020-04-12T09:55:26Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/60/1:101)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/61:1)" progress="0.074813">
+                <text> Er zijn geen goden in het heelal, geen naties, geen geld, geen mensenrechten, geen wetten en geen rechtsgang buiten de collectieve fantasie van de mensheid.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0b8eaf84-dc3f-4644-8c25-0f169e71fe38</dc:identifier>
+        <dc:date>2020-04-23T10:50:28Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/92/1:3)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/92/1:187)" progress="0.0822943">
+                <text>tegenstelling tot een leugen is een imaginaire realiteit iets waarin iedereen gelooft, en zolang dit collectieve geloof bestaat, oefent de imaginaire realiteit macht uit in de wereld. </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:e3a0db46-6b60-43ac-91f4-d185d8466baf</dc:identifier>
+        <dc:date>2020-04-12T10:07:19Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/88/1:491)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/89:1)" progress="0.0822943">
+                <text>Bedenk maar eens hoe moeilijk het zou zijn om staten, kerken of rechtssystemen op te zetten als we alleen konden praten over dingen die echt bestaan, zoals rivieren, bomen en leeuwen.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:351ab75b-3670-4b4e-a2cd-cb08374347f3</dc:identifier>
+        <dc:date>2020-04-12T09:57:11Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/62/1:390)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/62/1:513)" progress="0.074813">
+                <text>magiërs. Het voornaamste verschil tussen hen en tribale sjamanen is dat moderne juristen veel vreemdere verhalen vertellen</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:2d434333-1e3b-4655-a529-3cc4eb5520d6</dc:identifier>
+        <dc:date>2020-04-12T10:02:02Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/74/1:189)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/74/1:348)" progress="0.0773067">
+                <text>Het is net als jij en ik gehouden aan de wetten van de landen waarin het opereert. Het kan een bankrekening openen en eigendom bezitten. Het betaalt belasting </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:eebb96a7-29dc-4340-9db7-0adadfe93053</dc:identifier>
+        <dc:date>2020-04-23T10:51:16Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/98/1:167)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/98/3:169)" progress="0.084788">
+                <text>Grootschalige menselijke samenwerking is gebaseerd op mythen, dus de manier waarop mensen samenwerken kan veranderd worden door aanpassingen in die mythen, dus door een ander verhaal te vertellen. Onder de juiste omstandigheden kunnen mythen razendsnel veranderen. In 1789 stapte het Franse volk bijna op slag over van het geloof in de mythe van het goddelijke recht van koningen op het geloof in de mythe van de soevereiniteit van het volk.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:d802e0fd-de6e-4c81-a2f7-d61487fc1f31</dc:identifier>
+        <dc:date>2020-04-12T09:43:02Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/34/3:63)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/35:1)" progress="0.0648379">
+                <text>Dit vermogen om over fictieve dingen te praten is het meest unieke kenmerk van de sapienstaal.
+</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:5744a38b-184d-46ec-a894-be0347e44e40</dc:identifier>
+        <dc:date>2020-04-12T09:52:06Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/50/3:86)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/50/5:17)" progress="0.0723192">
+                <text>Sociologisch onderzoek heeft aangetoond dat de maximale ‘natuurlijke’ grootte van een door roddel verbonden groep op zo’n 150 individuen ligt.</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:2c17a2bf-fe48-475b-bc47-f293c29a518b</dc:identifier>
+        <dc:date>2020-04-12T09:37:14Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/30/1:920)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/30/1:1085)" progress="0.0648379">
+                <text>Roddelkousen vormen in wezen de vierde stand, als journalisten die de samenleving informeren over bedriegers en profiteurs en ons daar op die manier tegen beschermen</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:aedeed2d-fcb7-4045-8278-ddaa2623ddb7</dc:identifier>
+        <dc:date>2020-04-23T11:28:13Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/138/3:593)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/138/3:778)" progress="0.0972569">
+                <text>Het echte verschil tussen ons en chimpansees is de mythische lijm die grote aantallen individuen, families en groepen verbindt. Deze lijm heeft ons tot de meesters der schepping gemaakt</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:b7d70cf3-c0cd-4459-b951-d829c347cde7</dc:identifier>
+        <dc:date>2020-04-12T09:56:53Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/62/1:335)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/62/1:390)" progress="0.074813">
+                <text>Moderne zakenlieden en juristen zijn in wezen machtige </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:7c2de82f-4694-443a-954e-501c77ec2f75</dc:identifier>
+        <dc:date>2020-04-12T10:00:14Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0009.xhtml#point(/1/4/2/73:6)" end="OEBPS/Text/Section0009.xhtml#point(/1/4/2/74/1:86)" progress="0.0773067">
+                <text>Peugeot is een collectief hersenspinsel. Juristen noemen dit ‘juridische fictie’. </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:0f2f7625-75a1-4936-be74-87f1cff60c6c</dc:identifier>
+        <dc:date>2020-04-30T21:01:05Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0010.xhtml#point(/1/4/2/48/1:226)" end="OEBPS/Text/Section0010.xhtml#point(/1/4/2/48/1:434)" progress="0.114713">
+                <text>Honden die het best inspeelden op de behoeften en gevoelens van hun menselijke metgezellen kregen extra zorg en voedsel en konden makkelijker overleven. Tegelijk leerden honden mensen manipuleren voor hun eig</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:86445da3-c10f-4ad9-8a55-ae4deb304770</dc:identifier>
+        <dc:date>2020-04-30T21:01:15Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="OEBPS/Text/Section0010.xhtml#point(/1/4/2/48/1:437)" end="OEBPS/Text/Section0010.xhtml#point(/1/4/2/48/3:0)" progress="0.114713">
+                <text>behoeften. Deze vijftienduizend jaar oude band heeft een veel sterkere verstandhouding en veel meer affectie tussen mensen en honden opgeleverd dan tussen mensen en welk ander dier dan ook.10</text>
+            </fragment>
+        </target>
+    </annotation>
+</annotationSet>
