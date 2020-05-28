@@ -1,0 +1,103 @@
+
+<annotationSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://ns.adobe.com/digitaleditions/annotations">
+    <publication>
+        <dc:identifier>http://www.gutenberg.org/ebooks/205</dc:identifier>
+        <dc:title>Walden</dc:title>
+        <dc:creator>Henry David Thoreau</dc:creator>
+        <dc:language>en</dc:language>
+    </publication>
+    <annotation>
+        <dc:identifier>urn:uuid:8adb0741-0bcf-4404-a646-4588f67271be</dc:identifier>
+        <dc:date>2020-04-11T11:14:12Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/7:1)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/8/1:27)" progress="0.0170068">
+                <text>I would fain say something,</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:22325639-f716-4ce0-8bc9-78b30dfafacb</dc:identifier>
+        <dc:date>2020-04-11T11:21:07Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/8/1:514)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/8/1:521)" progress="0.0170068">
+                <text>penance</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:108c82dc-a1f2-4fd9-a842-c5a24b8728a1</dc:identifier>
+        <dc:date>2020-04-11T11:37:18Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:669)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:679)" progress="0.0204082">
+                <text>well-nigh </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:69449568-dbba-41a4-8ccc-904c57b52469</dc:identifier>
+        <dc:date>2020-04-11T11:34:10Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:343)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:348)" progress="0.0204082">
+                <text>serfs</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:12a67186-5503-43d9-9fbe-3f1b1b86d084</dc:identifier>
+        <dc:date>2020-04-11T11:37:37Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:806)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/10/1:812)" progress="0.0204082">
+                <text>Augean</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:dcdc6790-c0e2-4f65-abd7-b05b7d77abda</dc:identifier>
+        <dc:date>2020-04-11T11:12:16Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/6/1:955)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/6/1:1120)" progress="0.0170068">
+                <text> should not talk so much about myself if there were anybody else whom I knew as well. Unfortunately, I am confined to this theme by the narrowness of my experience. </text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:39b0de28-2e83-466a-8c60-01959dbe3eed</dc:identifier>
+        <dc:date>2020-04-11T11:08:01Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/4/1:320)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/4/1:329)" progress="0.0170068">
+                <text>sojourner</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:f7b1b6ca-f408-4590-a74e-f1c7b94fb1ca</dc:identifier>
+        <dc:date>2020-04-17T23:08:45Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/28/1:482)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/28/1:584)" progress="0.0272109">
+                <text>. What everybody echoes or in silence passes by as true to-day may turn out to be falsehood to-morrow,</text>
+            </fragment>
+        </target>
+    </annotation>
+    <annotation>
+        <dc:identifier>urn:uuid:08e8cbe4-25e9-4974-a9ef-3d8e00911f7d</dc:identifier>
+        <dc:date>2020-04-17T23:19:47Z</dc:date>
+        <dc:creator>urn:uuid:8e5ba9d6-d418-44b5-9423-fd44dcdb65f0</dc:creator>
+        <target>
+            <fragment start="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/29:1)" end="205/www.gutenberg.org%40files%40205%40205-h%40205-h-0_split_003.htm#point(/1/4/30/1:363)" progress="0.0306122">
+                <text>One farmer says to me, &quot;You cannot live on vegetable food solely, for it furnishes nothing to make bones with&quot;; and so he religiously devotes a part of his day to supplying his system with the raw material of bones; walking all the while he talks behind his oxen, which, with vegetable-made bones, jerk him and his lumbering plow along in spite of every obstacle.</text>
+            </fragment>
+        </target>
+        <content>
+            <dc:date>2020-04-17T23:19:47Z</dc:date>
+            <text>Vegans. Anyone?</text>
+        </content>
+    </annotation>
+</annotationSet>

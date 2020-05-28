@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const multer = require('multer')
 const cors = require('cors')
-const fs = require('fs').promises;
+const fs = require('fs');
 const parser = require('xml2json')
-const util = require('util');
+// const util = require('util');
 
 
 app.use(cors())
@@ -31,38 +31,37 @@ app.post('/upload', (req, res) => {
   })
 })
 
-app.post('/convert', async (req, res) => {
-  const ret = new Promise((resolve, reject) => {
-    const fileNames = fs.readFile('./public/annot/')
-    resolve(fileNames)
+// app.post('/upload',(req, res) => {
+//   upload(req, res, (err) => {           
+//            if (err instanceof multer.MulterError) {
+//                return res.status(500).json(err)
+//            } else if (err) {
+//                return res.status(500).json(err)
+//            }
+//       return res.status(200).send(req.file)
+//     })
+// });
+
+app.post('/convert',async(req, res) => {
+  const ret = new Promise((resolve, reject) => { 
+    fs.readdirSync('./public/annot').forEach(file => {
+    return fs.readFile(`./public/annot/${file}`, 'utf8', function (err,data) {
+    if (err) return reject(err);
+    const json = parser.toJson(data);
+    const fileObject = JSON.parse(json);
+    // const test = []
+    // test.push(fileObject)
+    resolve(fileObject && fileObject)
   })
-    .then(result => {
-      // const arr = []
-      const readFile = async (title) => await fs.readFile(`./public/annot/${title}`, 'utf8', (err, data) => {
-        if (err) return console.log(err)
-        const json = parser.toJson(data)
-        const fileObject = JSON.parse(json)
-        console.log('fileObject', fileObject);
-        return fileObject
-      })
-      const files = result.map(async title => await readFile(title))
-      console.log('files', files);
-      return files
-    })
-    .then(result => {
-      console.log('resultFinal', result)
-      res.status(200).send(result)
-      // return result
-    })
-    .catch(err => console.error(err))
-    return ret
-  })
-  // try {
-  //   res.status(200).send(await ret)
-  //   // console.log(ret, 'ret')
-  // } catch (error) {
-  //   console.log(error)
-  // }
+});
+})
+  try {
+    res.status(200).send(await ret)
+  // console.log(ret, 'ret')
+  }
+  catch (error) {
+    console.log(error)
+  }
   // return skimfiles
 
   // console.log('skimfiles', skimfiles);
@@ -71,6 +70,6 @@ app.post('/convert', async (req, res) => {
   //  const response = res.status(200).send(sendObject)
   //  return response
   // fs.readFile('./public/annot', [encoding], [callback]);
-// })
+})
 
 app.listen(8000, () => console.log('App running on port 8000'))
