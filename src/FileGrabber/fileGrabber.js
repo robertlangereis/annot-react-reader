@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
@@ -12,6 +12,39 @@ export default function FileGrabber () {
 
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
+  const [voca, setVoca] = useState([])
+  const [annotationItem, setAnnotationItem] = useState('')
+  const [texts, setTexts] = useState([])
+  const [convertComplete, setConvertComplete] = useState(false)
+  // const [annotationTexts, setAnnotationTexts] = useState(null)
+  // const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    
+    }, [document, voca, texts]);
+  
+  const convertUpload = (annotationObject)=>{ 
+    annotationObject.annotations.forEach(item => {
+      setAnnotationItem(item.target.fragment.text)
+      console.log('item.target.fragment.text', item.target.fragment.text);
+      console.log('annotationItem', annotationItem);
+      setConvertComplete(true)
+      // console.log('item', );
+      const wordCount= (str)=> { 
+          return str.split(" ").length;
+        }
+      const wordLength = wordCount(annotationItem)
+      // console.log('annotationItem', annotationItem);
+      // console.log('annotationItem', typeof annotationItem);
+      // console.log('wordLength', wordLength);
+      if(wordLength < 2) setVoca([...voca, annotationItem])
+      else setTexts([...texts, annotationItem])
+      setAnnotationItem('')
+  })
+
+}
+
+  
 
   const maxSelectFile = files => {
     if (files.length > 1) {
@@ -71,7 +104,7 @@ export default function FileGrabber () {
       })
       .then(res => {
         toast.success('upload success')
-        console.log(res.statusText)
+        // console.log(res.statusText)
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -94,13 +127,15 @@ export default function FileGrabber () {
         // console.log('res.data.publication.title', res.data.publication['dc:title']);
         // console.log('res.data.publication.author', res.data.publication['dc:creator']);
         // console.log('res.data.annotation', res.data.annotations);
-        setDocument({
+        const annotationObject = {
           title: res.data.publication['dc:title'],
           author: res.data.publication['dc:creator'],
           annotations: res.data.annotation
-        })
+        }
+        setDocument(annotationObject)
+        convertUpload(annotationObject)
         toast.success('upload success')
-        console.log(res.statusText)
+        // console.log(res.statusText)
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -147,9 +182,8 @@ export default function FileGrabber () {
               </button>
             </div>
           </form>
-          {/* {document && <Annotations title={document.title} author={document.author} annotations={document.annotations}/>} */}
-          {document && console.log('document', document)}
-          
+          {convertComplete && <Annotations title={document.title} author={document.author} voca={voca} text={texts}/>}
+          {/* {document && console.log('document', document)} */}
         </div>
       </div>
     </div>

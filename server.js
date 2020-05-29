@@ -45,12 +45,21 @@ app.post('/upload', (req, res) => {
 app.post('/convert',async(req, res) => {
   const ret = new Promise((resolve, reject) => { 
     fs.readdirSync('./public/annot').forEach(file => {
-    return fs.readFile(`./public/annot/${file}`, 'utf8', function (err,data) {
+      const path = `./public/annot/${file}`
+    return fs.readFile(path, 'utf8', function (err,data) {
     if (err) return reject(err);
     const json = parser.toJson(data);
     const fileObject = JSON.parse(json);
     // const test = []
     // test.push(fileObject)
+    fs.unlink(path, (err) => {
+      if (err) {
+        console.error(err)
+        return
+      }
+    
+      //file removed
+    })
     resolve(fileObject && fileObject.annotationSet)
   })
 });
