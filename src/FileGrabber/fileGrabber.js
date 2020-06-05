@@ -13,7 +13,7 @@ export default function FileGrabber () {
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
   const [voca, setVoca] = useState([])
-  const [annotationItem, setAnnotationItem] = useState('')
+  const [annotationItem, setAnnotationItem] = useState('null')
   const [texts, setTexts] = useState([])
   const [convertComplete, setConvertComplete] = useState(false)
   // const [annotationTexts, setAnnotationTexts] = useState(null)
@@ -23,28 +23,25 @@ export default function FileGrabber () {
     
     }, [document, voca, texts]);
   
+
+  const setVocaState =vocas=>setVoca([...voca, vocas])
+  const setTextsState =text=>setTexts([...texts, text])
+
   const convertUpload = (annotationObject)=>{ 
     annotationObject.annotations.forEach(item => {
       setAnnotationItem(item.target.fragment.text)
-      console.log('item.target.fragment.text', item.target.fragment.text);
-      console.log('annotationItem', annotationItem);
       setConvertComplete(true)
-      // console.log('item', );
+      console.log('annotationItem', annotationItem);
       const wordCount= (str)=> { 
           return str.split(" ").length;
         }
-      const wordLength = wordCount(annotationItem)
-      // console.log('annotationItem', annotationItem);
-      // console.log('annotationItem', typeof annotationItem);
-      // console.log('wordLength', wordLength);
-      if(wordLength < 2) setVoca([...voca, annotationItem])
-      else setTexts([...texts, annotationItem])
-      setAnnotationItem('')
+      const wordLength = wordCount(item.target.fragment.text)
+      if(wordLength < 2) setVocaState(item.target.fragment.text)
+      else return setTextsState(item.target.fragment.text)
+      // setAnnotationItem('')
   })
-
 }
 
-  
 
   const maxSelectFile = files => {
     if (files.length > 1) {
@@ -56,7 +53,7 @@ export default function FileGrabber () {
   }
 
   const checkFileSize = files => {
-    const maxSize = 15000
+    const maxSize = 150000
     const filesTooBig = Array.from(files).every(file => file.size > maxSize)
     if (filesTooBig) {
       setSelectedFiles(null) // discard selected file(s)
@@ -135,7 +132,6 @@ export default function FileGrabber () {
         setDocument(annotationObject)
         convertUpload(annotationObject)
         toast.success('upload success')
-        // console.log(res.statusText)
       })
       .catch(err => { 
         toast.error('upload fail')
