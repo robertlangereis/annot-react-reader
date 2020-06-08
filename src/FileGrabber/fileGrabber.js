@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
@@ -8,38 +8,19 @@ import './fileGrabber.css'
 
 
 export default function FileGrabber () {
+  const [texts, setTexts] = useState(null)
   const [selectedFiles, setSelectedFiles] = useState(null)
-
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
-  const [voca, setVoca] = useState([])
-  const [annotationItem, setAnnotationItem] = useState('null')
-  const [texts, setTexts] = useState([])
   const [convertComplete, setConvertComplete] = useState(false)
-  // const [annotationTexts, setAnnotationTexts] = useState(null)
-  // const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    
-    }, [document, voca, texts]);
-  
-
-  const setVocaState =vocas=>setVoca([...voca, vocas])
-  const setTextsState =text=>setTexts([...texts, text])
 
   const convertUpload = (annotationObject)=>{ 
+    const array = []
     annotationObject.annotations.forEach(item => {
-      setAnnotationItem(item.target.fragment.text)
-      setConvertComplete(true)
-      console.log('annotationItem', annotationItem);
-      const wordCount= (str)=> { 
-          return str.split(" ").length;
-        }
-      const wordLength = wordCount(item.target.fragment.text)
-      if(wordLength < 2) setVocaState(item.target.fragment.text)
-      else return setTextsState(item.target.fragment.text)
-      // setAnnotationItem('')
+      array.push(item.target.fragment.text)
   })
+  setConvertComplete(true)
+  return setTexts(array)
 }
 
 
@@ -118,12 +99,6 @@ export default function FileGrabber () {
         }
       })
       .then(res => {
-        // res.data.map(item => console.log(item))
-        // res.data
-        // console.log('res.data', res.data);
-        // console.log('res.data.publication.title', res.data.publication['dc:title']);
-        // console.log('res.data.publication.author', res.data.publication['dc:creator']);
-        // console.log('res.data.annotation', res.data.annotations);
         const annotationObject = {
           title: res.data.publication['dc:title'],
           author: res.data.publication['dc:creator'],
@@ -178,8 +153,7 @@ export default function FileGrabber () {
               </button>
             </div>
           </form>
-          {convertComplete && <Annotations title={document.title} author={document.author} voca={voca} text={texts}/>}
-          {/* {document && console.log('document', document)} */}
+          {(convertComplete && texts) && <Annotations title={document.title} author={document.author} texts={texts}/>}
         </div>
       </div>
     </div>

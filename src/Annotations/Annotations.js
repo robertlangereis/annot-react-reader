@@ -1,4 +1,5 @@
 import React from 'react'
+import AnnotationElement from './AnnotationElement'
 
 export default function Annotations({title, author, voca, texts}) {
  
@@ -10,10 +11,7 @@ export default function Annotations({title, author, voca, texts}) {
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                    {voca && voca}
-                    </div>
-                    <div className="col-md">
-                    {texts && texts}
+                    <AnnotationElement texts={texts}/>
                     </div>
                 </div>
             </div>
