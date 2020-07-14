@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
@@ -8,21 +8,23 @@ import './fileGrabber.css'
 
 
 export default function FileGrabber () {
+  console.log('joe')
   const [texts, setTexts] = useState(null)
   const [selectedFiles, setSelectedFiles] = useState(null)
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
   const [convertComplete, setConvertComplete] = useState(false)
-
-  const convertUpload = (annotationObject)=>{ 
+  const convertUpload = annotationObject =>{ 
+    setDocument(annotationObject)
     const array = []
     annotationObject.annotations.forEach(item => {
       array.push(item.target.fragment.text)
   })
-  setConvertComplete(true)
   return setTexts(array)
 }
-
+// useEffect(() => {
+//   // Inside this callback function we perform our side effects.
+// }, [texts]);
 
   const maxSelectFile = files => {
     if (files.length > 1) {
@@ -82,7 +84,6 @@ export default function FileGrabber () {
       })
       .then(res => {
         toast.success('upload success')
-        // console.log(res.statusText)
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -104,9 +105,11 @@ export default function FileGrabber () {
           author: res.data.publication['dc:creator'],
           annotations: res.data.annotation
         }
-        setDocument(annotationObject)
+        // console.log("once") 
         convertUpload(annotationObject)
+        setConvertComplete(true) 
         toast.success('upload success')
+        // console.log("success") 
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -153,9 +156,9 @@ export default function FileGrabber () {
               </button>
             </div>
           </form>
-          {(convertComplete && texts) && <Annotations title={document.title} author={document.author} texts={texts}/>}
         </div>
       </div>
+          {(convertComplete && texts) && <Annotations title={document.title} author={document.author} texts={texts}/>}
     </div>
   )
 }

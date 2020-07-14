@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function AnnotationElement({texts}) {
+export default function AnnotationElement({allAnnotations}) {
+    console.log('allAnnotations', allAnnotations.annotations);
     return (
-        texts.map((item, i)=> <li key={i}>{item}</li>)
+        allAnnotations.annotations.map((item, i)=> <li key={i}>{item}</li>)
     )
 }
