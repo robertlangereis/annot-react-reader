@@ -7,6 +7,14 @@ const parser = require('xml2json')
 // const util = require('util');
 
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+
 app.use(cors())
 
 const storage = multer.diskStorage({
@@ -81,4 +89,4 @@ app.post('/convert',async(req, res) => {
   // fs.readFile('./public/annot', [encoding], [callback]);
 })
 
-app.listen(8000, () => console.log('App running on port 8000'))
+// app.listen(8000, () => console.log('App running on port 8000'))
