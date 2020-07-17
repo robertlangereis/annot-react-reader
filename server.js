@@ -8,6 +8,7 @@ const parser = require('xml2json')
 
 
 const app = express()
+console.log('app', app);
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -88,6 +89,6 @@ app.post('/convert', async (req, res) => {
   //  return response
   // fs.readFile('./annot', [encoding], [callback]);
 })
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 app.listen(port, () => console.log(`App running on port ${port}`))
