@@ -22,10 +22,15 @@ const storage = multer.diskStorage({
     cb(null, file.originalname)
   }
 })
+console.log('storage', storage);
 
 const upload = multer({ storage: storage }).array('file')
+console.log('upload', upload);
 
 app.post('/upload', (req, res) => {
+  console.log('upload2', upload);
+  console.log('req2', req);
+  console.log('res2', res);
   upload(req, res, err => {
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err)
