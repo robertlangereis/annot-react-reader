@@ -22,9 +22,6 @@ export default function FileGrabber () {
   })
   return setTexts(array)
 }
-// useEffect(() => {
-//   // Inside this callback function we perform our side effects.
-// }, [texts]);
 
   const maxSelectFile = files => {
     if (files.length > 1) {
