@@ -1,18 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
+import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './fileGrabber.css'
 
 
 export default function FileGrabber () {
+  console.log('joe')
+  const [texts, setTexts] = useState(null)
   const [selectedFiles, setSelectedFiles] = useState(null)
-
   const [loaded, setLoaded] = useState(null)
+  const [document, setDocument] = useState(null)
+  const [convertComplete, setConvertComplete] = useState(false)
+  const convertUpload = annotationObject =>{ 
+    setDocument(annotationObject)
+    const array = []
+    annotationObject.annotations.forEach(item => {
+      array.push(item.target.fragment.text)
+  })
+  return setTexts(array)
+}
+// useEffect(() => {
+//   // Inside this callback function we perform our side effects.
+// }, [texts]);
 
   const maxSelectFile = files => {
-    if (files.length > 3) {
+    if (files.length > 1) {
       setSelectedFiles(null) // discard selected file(s)
       toast.error('Only 3 images can be uploaded at a time')
       return false
@@ -21,7 +36,7 @@ export default function FileGrabber () {
   }
 
   const checkFileSize = files => {
-    const maxSize = 15000
+    const maxSize = 150000
     const filesTooBig = Array.from(files).every(file => file.size > maxSize)
     if (filesTooBig) {
       setSelectedFiles(null) // discard selected file(s)
@@ -69,7 +84,6 @@ export default function FileGrabber () {
       })
       .then(res => {
         toast.success('upload success')
-        console.log(res.statusText)
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -86,9 +100,16 @@ export default function FileGrabber () {
         }
       })
       .then(res => {
-        console.log(res.data)
+        const annotationObject = {
+          title: res.data.publication['dc:title'],
+          author: res.data.publication['dc:creator'],
+          annotations: res.data.annotation
+        }
+        // console.log("once") 
+        convertUpload(annotationObject)
+        setConvertComplete(true) 
         toast.success('upload success')
-        console.log(res.statusText)
+        // console.log("success") 
       })
       .catch(err => { 
         toast.error('upload fail')
@@ -107,7 +128,7 @@ export default function FileGrabber () {
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
             <div className='form-group files color'>
-              <label>Upload Your File </label>
+              <label htmlFor="files">Upload Your File </label>
               <input
                 type='file'
                 name='file'
@@ -137,6 +158,7 @@ export default function FileGrabber () {
           </form>
         </div>
       </div>
+          {(convertComplete && texts) && <Annotations title={document.title} author={document.author} texts={texts}/>}
     </div>
   )
 }

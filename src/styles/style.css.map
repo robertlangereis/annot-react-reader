@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "style.scss",
+        "annotations.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
