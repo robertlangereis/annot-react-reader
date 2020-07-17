@@ -21,7 +21,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage }).array('file')
 
 app.post('/upload', (req, res) => {
+  console.log('upload', upload);
   upload(req, res, err => {
+    console.log('res', res);
+    
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err)
     } else if (err) {
