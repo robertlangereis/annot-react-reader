@@ -2,24 +2,15 @@ const express = require('express')
 const app = express()
 const multer = require('multer')
 const cors = require('cors')
-const fs = require('fs');
+const fs = require('fs')
 const parser = require('xml2json')
 // const util = require('util');
-
-
-app.use(express.static(path.join(__dirname, 'build')));
-
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
 
 app.use(cors())
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, './public/annot')
+    cb(null, './annot')
   },
   filename: (req, file, cb) => {
     cb(null, file.originalname)
@@ -40,7 +31,7 @@ app.post('/upload', (req, res) => {
 })
 
 // app.post('/upload',(req, res) => {
-//   upload(req, res, (err) => {           
+//   upload(req, res, (err) => {
 //            if (err instanceof multer.MulterError) {
 //                return res.status(500).json(err)
 //            } else if (err) {
@@ -50,33 +41,31 @@ app.post('/upload', (req, res) => {
 //     })
 // });
 
-app.post('/convert',async(req, res) => {
-  const ret = new Promise((resolve, reject) => { 
-    fs.readdirSync('./public/annot').forEach(file => {
-      const path = `./public/annot/${file}`
-    return fs.readFile(path, 'utf8', function (err,data) {
-    if (err) return reject(err);
-    const json = parser.toJson(data);
-    const fileObject = JSON.parse(json);
-    // const test = []
-    // test.push(fileObject)
-    fs.unlink(path, (err) => {
-      if (err) {
-        console.error(err)
-        return
-      }
-    
-      //file removed
+app.post('/convert', async (req, res) => {
+  const ret = new Promise((resolve, reject) => {
+    fs.readdirSync('./annot').forEach(file => {
+      if(file === '.gitignore') return
+      const path = `./annot/${file}`
+      return fs.readFile(path, 'utf8', function (err, data) {
+        if (err) return reject(err)
+        const json = parser.toJson(data)
+        const fileObject = JSON.parse(json)
+        fs.unlink(path, err => {
+          if (err) {
+            console.error(err)
+            return
+          }
+
+          //file removed
+        })
+        resolve(fileObject && fileObject.annotationSet)
+      })
     })
-    resolve(fileObject && fileObject.annotationSet)
   })
-});
-})
   try {
     res.status(200).send(await ret)
-  // console.log(ret, 'ret')
-  }
-  catch (error) {
+    // console.log(ret, 'ret')
+  } catch (error) {
     console.log(error)
   }
   // return skimfiles
@@ -86,7 +75,7 @@ app.post('/convert',async(req, res) => {
   // const sendObject = obj.map(file => file.annotationSet.publication)
   //  const response = res.status(200).send(sendObject)
   //  return response
-  // fs.readFile('./public/annot', [encoding], [callback]);
+  // fs.readFile('./annot', [encoding], [callback]);
 })
 
-// app.listen(8000, () => console.log('App running on port 8000'))
+app.listen(8000, () => console.log('App running on port 8000'))

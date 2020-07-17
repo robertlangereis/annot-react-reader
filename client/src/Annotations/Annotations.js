@@ -3,9 +3,6 @@ import AnnotationElement from './AnnotationElement'
 import VocaElement from './VocaElement'
 
 export default function Annotations({title, author, texts}) {
-    const [voca, setVocas] = useState([])
-    const [longerTexts, setLongerTexts] = useState([])
-
     const textsConvert = texts =>{
     const vocaArray = []
     const longerTextsArray = []

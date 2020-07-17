@@ -8,7 +8,6 @@ import './fileGrabber.css'
 
 
 export default function FileGrabber () {
-  console.log('joe')
   const [texts, setTexts] = useState(null)
   const [selectedFiles, setSelectedFiles] = useState(null)
   const [loaded, setLoaded] = useState(null)
