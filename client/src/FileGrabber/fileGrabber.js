@@ -73,7 +73,7 @@ export default function FileGrabber () {
     let data = new FormData()
     selectedFiles && Array.from(selectedFiles).forEach(file => data.append('file', file))
     if(selectedFiles !==null)axios
-      .post('http://localhost:8000/upload', data, {
+      .post('http://localhost:5000/upload', data, {
         onUploadProgress: ProgressEvent => {
           setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
         }
@@ -90,7 +90,7 @@ export default function FileGrabber () {
   }
   const onClickConverter = () => {
     if(selectedFiles !==null)axios
-      .post('http://localhost:8000/convert', {
+      .post('http://localhost:5000/convert', {
         onUploadProgress: ProgressEvent => {
           setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
         }
