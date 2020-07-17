@@ -22,8 +22,10 @@ const storage = multer.diskStorage({
     cb(null, file.originalname)
   }
 })
+console.log('storage', storage);
 
 const upload = multer({ storage: storage }).array('file')
+console.log('upload', upload);
 
 app.post('/upload', (req, res) => {
   upload(req, res, err => {
@@ -52,10 +54,13 @@ app.post('/convert', async (req, res) => {
     fs.readdirSync('./annot').forEach(file => {
       if(file === '.gitignore') return
       const path = `./annot/${file}`
+      console.log('path', path);
       return fs.readFile(path, 'utf8', function (err, data) {
         if (err) return reject(err)
         const json = parser.toJson(data)
+        console.log('json', json);
         const fileObject = JSON.parse(json)
+        console.log('fileObject', fileObject);
         fs.unlink(path, err => {
           if (err) {
             console.error(err)
