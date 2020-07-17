@@ -23,7 +23,7 @@
   "scripts": {
     "test": "react-scripts test",
     "client": "npm run start --prefix client",
-    "server": "nodemon index.js",
+    "server": "nodemon server.js",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"        
