@@ -77,5 +77,6 @@ app.post('/convert', async (req, res) => {
   //  return response
   // fs.readFile('./annot', [encoding], [callback]);
 })
+const port = process.env.PORT || 5000;
 
-app.listen(8000, () => console.log('App running on port 8000'))
+app.listen(port, () => console.log(`App running on port ${port}`))
