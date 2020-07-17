@@ -12,7 +12,7 @@ const app = express()
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// app.use(cors())
+app.use(cors())
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
