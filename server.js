@@ -1,12 +1,17 @@
 const express = require('express')
-const app = express()
 const multer = require('multer')
 const cors = require('cors')
 const fs = require('fs')
 const parser = require('xml2json')
 // const util = require('util');
 
-app.use(cors())
+
+const app = express()
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// app.use(cors())
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
