@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import AnnotationElement from './AnnotationElement'
 import VocaElement from './VocaElement'
 
@@ -25,8 +25,14 @@ export default function Annotations({title, author, texts}) {
     }
     return annotObject
     }
+    useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `${title} by ${author}`;
+  });
+
+
     return (
-        texts && <div>
+        texts && <article>
             <div className="annotations__titles">
             <h1>{title}</h1>
             <h3>{author}</h3>
@@ -44,6 +50,6 @@ export default function Annotations({title, author, texts}) {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
