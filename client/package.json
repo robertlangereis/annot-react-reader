@@ -17,6 +17,7 @@
     "react-scripts": "3.4.1",
     "react-toastify": "^6.0.5",
     "reactstrap": "^8.4.1",
+    "universal-cookie": "^4.0.3",
     "util": "^0.12.3",
     "xml2json": "^0.12.0"
   },

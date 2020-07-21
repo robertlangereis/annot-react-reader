@@ -6,7 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './fileGrabber.css'
 
-
 export default function FileGrabber () {
   const [texts, setTexts] = useState(null)
   const [selectedFiles, setSelectedFiles] = useState(null)
