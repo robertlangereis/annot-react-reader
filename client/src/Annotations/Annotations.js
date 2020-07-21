@@ -20,7 +20,7 @@ export default function Annotations ({ title, author, texts }) {
   }
   useEffect(() => {
     // Update the document title using the browser API
-    document.title = `${title} by ${author}`
+    document.title = `Annot.io | ${title} by ${author}`
   })
 
   return (
