@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './fileGrabber.css'
 
 export default function FileGrabber () {
@@ -12,14 +12,14 @@ export default function FileGrabber () {
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
   const [convertComplete, setConvertComplete] = useState(false)
-  const convertUpload = annotationObject =>{ 
+  const convertUpload = annotationObject => {
     setDocument(annotationObject)
     const array = []
     annotationObject.annotations.forEach(item => {
       array.push(item.target.fragment.text)
-  })
-  return setTexts(array)
-}
+    })
+    return setTexts(array)
+  }
 
   const maxSelectFile = files => {
     if (files.length > 1) {
@@ -53,9 +53,7 @@ export default function FileGrabber () {
       .every(ext => ext === 'annot')
     if (!isAnnotFile) {
       setSelectedFiles(null) // discard selected file(s)
-      toast.error(
-        'This webapplication only supports .annot format files'
-      )
+      toast.error('This webapplication only supports .annot format files')
       return false
     }
     return true
@@ -70,60 +68,61 @@ export default function FileGrabber () {
 
   const onClickHandler = () => {
     let data = new FormData()
-    selectedFiles && Array.from(selectedFiles).forEach(file => data.append('file', file))
-    if(selectedFiles !==null)axios
-      .post('http://localhost:5000/upload', data, {
-        onUploadProgress: ProgressEvent => {
-          setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
-        }
-      })
-      .then(res => {
-        toast.success('upload success')
-      })
-      .catch(err => { 
-        toast.error('upload fail')
-        console.error(err)
-
-    })
+    selectedFiles &&
+      Array.from(selectedFiles).forEach(file => data.append('file', file))
+    if (selectedFiles !== null)
+      axios
+        .post('/upload', data, {
+          onUploadProgress: ProgressEvent => {
+            setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
+          }
+        })
+        .then(res => {
+          toast.success('upload success')
+        })
+        .catch(err => {
+          toast.error('upload fail')
+          console.error(err)
+        })
     else toast.error('upload fail')
   }
   const onClickConverter = () => {
-    if(selectedFiles !==null)axios
-      .post('http://localhost:5000/convert', {
-        onUploadProgress: ProgressEvent => {
-          setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
-        }
-      })
-      .then(res => {
-        const annotationObject = {
-          title: res.data.publication['dc:title'],
-          author: res.data.publication['dc:creator'],
-          annotations: res.data.annotation
-        }
-        // console.log("once") 
-        convertUpload(annotationObject)
-        setConvertComplete(true) 
-        toast.success('upload success')
-        // console.log("success") 
-      })
-      .catch(err => { 
-        toast.error('upload fail')
-        console.error(err)
-
-    })
+    if (selectedFiles !== null)
+      axios
+        .post('/convert', {
+          onUploadProgress: ProgressEvent => {
+            setLoaded((ProgressEvent.loaded / ProgressEvent.total) * 100)
+          }
+        })
+        .then(res => {
+          const annotationObject = {
+            title: res.data.publication['dc:title'],
+            author: res.data.publication['dc:creator'],
+            annotations: res.data.annotation
+          }
+          // console.log("once")
+          convertUpload(annotationObject)
+          setConvertComplete(true)
+          toast.success('upload success')
+          // console.log("success")
+        })
+        .catch(err => {
+          toast.error('upload fail')
+          console.error(err)
+        })
     else toast.error('upload fail')
   }
 
   return (
     <div className='container'>
-      <div className="form-group">
-       <ToastContainer />
+      <div className='form-group'>
+        <ToastContainer />
       </div>
       <div className='row'>
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
             <div className='form-group files color'>
-              <label htmlFor="files">Upload Your File </label>
+              <label htmlFor='files'>Upload Your File </label>
               <input
                 type='file'
                 name='file'
@@ -153,7 +152,13 @@ export default function FileGrabber () {
           </form>
         </div>
       </div>
-          {(convertComplete && texts) && <Annotations title={document.title} author={document.author} texts={texts}/>}
+      {convertComplete && texts && (
+        <Annotations
+          title={document.title}
+          author={document.author}
+          texts={texts}
+        />
+      )}
     </div>
   )
 }

@@ -4,6 +4,7 @@ const multer = require('multer')
 const cors = require('cors')
 const fs = require('fs')
 const parser = require('xml2json')
+const port = process.env.PORT || 5000;
 
 
 const app = express()
@@ -24,6 +25,13 @@ const storage = multer.diskStorage({
 })
 
 const upload = multer({ storage: storage }).array('file')
+
+// API calls
+// app.post('/upload', (req, res) => {
+//   res.send(
+//     `I received your POST request. This is what you sent me: ${req.body.post}`,
+//   );
+// });
 
 app.post('/upload', (req, res) => {
   console.log('upload2', upload);
@@ -75,7 +83,15 @@ app.post('/convert', async (req, res) => {
   //  return response
   // fs.readFile('./annot', [encoding], [callback]);
 })
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+// Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
 
 app.listen(port, () => console.log(`App running on port ${port}`))
