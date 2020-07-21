@@ -34,9 +34,6 @@ const upload = multer({ storage: storage }).array('file')
 // });
 
 app.post('/upload', (req, res) => {
-  console.log('upload2', upload);
-  console.log('req2', req);
-  console.log('res2', res);
   upload(req, res, err => {
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err)
@@ -70,18 +67,9 @@ app.post('/convert', async (req, res) => {
   })
   try {
     res.status(200).send(await ret)
-    // console.log(ret, 'ret')
   } catch (error) {
     console.log(error)
   }
-  // return skimfiles
-
-  // console.log('skimfiles', skimfiles);
-  // console.log('obj', obj);
-  // const sendObject = obj.map(file => file.annotationSet.publication)
-  //  const response = res.status(200).send(sendObject)
-  //  return response
-  // fs.readFile('./annot', [encoding], [callback]);
 })
 // const port = process.env.PORT || 5000;
 

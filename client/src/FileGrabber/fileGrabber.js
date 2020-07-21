@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
@@ -100,11 +100,9 @@ export default function FileGrabber () {
             author: res.data.publication['dc:creator'],
             annotations: res.data.annotation
           }
-          // console.log("once")
           convertUpload(annotationObject)
           setConvertComplete(true)
           toast.success('upload success')
-          // console.log("success")
         })
         .catch(err => {
           toast.error('upload fail')
