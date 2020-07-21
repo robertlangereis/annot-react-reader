@@ -4,15 +4,14 @@ const multer = require('multer')
 const cors = require('cors')
 const fs = require('fs')
 const parser = require('xml2json')
-// const util = require('util');
 
 
 const app = express()
-console.log('app', app);
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
+// Avoid CORS blocking 
 app.use(cors())
 
 const storage = multer.diskStorage({
@@ -23,10 +22,8 @@ const storage = multer.diskStorage({
     cb(null, file.originalname)
   }
 })
-console.log('storage', storage);
 
 const upload = multer({ storage: storage }).array('file')
-console.log('upload', upload);
 
 app.post('/upload', (req, res) => {
   console.log('upload2', upload);
@@ -41,17 +38,6 @@ app.post('/upload', (req, res) => {
     return res.status(200).send(req.file)
   })
 })
-
-// app.post('/upload',(req, res) => {
-//   upload(req, res, (err) => {
-//            if (err instanceof multer.MulterError) {
-//                return res.status(500).json(err)
-//            } else if (err) {
-//                return res.status(500).json(err)
-//            }
-//       return res.status(200).send(req.file)
-//     })
-// });
 
 app.post('/convert', async (req, res) => {
   const ret = new Promise((resolve, reject) => {
