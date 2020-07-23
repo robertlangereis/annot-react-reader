@@ -120,7 +120,8 @@ export default function FileGrabber () {
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
             <div className='form-group files color'>
-              <label htmlFor='files'>Upload Your File </label>
+              <label htmlFor='files'>Upload Your .annot File* </label>
+              <span className="form-label"> *all the notes are kept in the Annotations folder under your digital editions folder and each book has it's own .annot file</span>
               <input
                 type='file'
                 name='file'
@@ -148,6 +149,7 @@ export default function FileGrabber () {
               </button>
             </div>
           </form>
+        
         </div>
       </div>
       {convertComplete && texts && (

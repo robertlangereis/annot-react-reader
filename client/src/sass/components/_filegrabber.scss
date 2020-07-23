@@ -1,0 +1,23 @@
+.row {
+	margin: 0 auto;
+}
+
+.col {
+	&-md {
+		&-6 {
+			margin: 0 auto;
+		}
+	}
+}
+
+.form {
+	&-label {
+        font-size: 8px;
+        display: block;
+        margin-bottom: 2%;
+	}
+}
+
+.label{
+    margin: 0;
+}

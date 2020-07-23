@@ -26,14 +26,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).array('file')
 
-// API calls
-// app.post('/upload', (req, res) => {
-//   res.send(
-//     `I received your POST request. This is what you sent me: ${req.body.post}`,
-//   );
-// });
-
-app.post('/upload', (req, res) => {
+  app.post('/upload', (req, res) => {
   upload(req, res, err => {
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err)
@@ -53,14 +46,14 @@ app.post('/convert', async (req, res) => {
         if (err) return reject(err)
         const json = parser.toJson(data)
         const fileObject = JSON.parse(json)
-        fs.unlink(path, err => {
-          if (err) {
-            console.error(err)
-            return
-          }
-
-          //file removed
-        })
+        // console.log('fileObject', fileObject);
+        // fs.unlink(path, err => {
+        //   if (err) {
+        //     console.error(err)
+        //     return
+        //   }
+        //   //file removed
+        // })
         resolve(fileObject && fileObject.annotationSet)
       })
     })
