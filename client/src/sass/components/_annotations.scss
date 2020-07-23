@@ -1,0 +1,12 @@
+.annotations {
+	&__section {
+        margin: 0 auto;
+		width: 80%;
+    }
+    &__titles{
+        margin: 5% auto;
+    }
+    &__title, &__author, &__text, &__new-words{
+        text-align: center;
+    }
+}

@@ -12,9 +12,19 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: grey;
+  color: #282c34;
   padding: 3rem;
   box-sizing: border-box; }
+
+.annotations__section {
+  margin: 0 auto;
+  width: 80%; }
+
+.annotations__titles {
+  margin: 5% auto; }
+
+.annotations__title, .annotations__author, .annotations__text, .annotations__new-words {
+  text-align: center; }
 
 .row {
   margin: 0 auto; }

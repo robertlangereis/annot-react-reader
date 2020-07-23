@@ -25,20 +25,20 @@ export default function Annotations ({ title, author, texts }) {
 
   return (
     texts && (
-      <article>
+      <article className='annotations__section'>
         <div className='annotations__titles'>
-          <h1>{title}</h1>
-          <h3>{author}</h3>
+          <h1 className='annotations__title'>{title}</h1>
+          <h3 className='annotations__author'>{author}</h3>
         </div>
         {/* <div>{annotationTexts}</div> */}
         <div className='container'>
           <div className='row'>
             <div className='col-sm'>
-              <h2>Text Annotations</h2>
+              <h2 className="annotations__text">Text Annotations</h2>
               <AnnotationElement allAnnotations={textsConvert(texts)} />
             </div>
             <div className='col-sm'>
-              <h2>New words</h2>
+              <h2 className="annotations__new-words">New words</h2>
               <VocaElement allAnnotations={textsConvert(texts)} />
             </div>
           </div>
