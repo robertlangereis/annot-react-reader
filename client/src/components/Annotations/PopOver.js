@@ -9,19 +9,11 @@ const PopOver = ({vocaWord, dictionaryLookup, uniqueId}) => {
 
   const toggle = () => setPopoverOpen(!popoverOpen);
 
-  const fetchTypeOfWord = async() => {
-        const foundWords = dictionaryLookup(vocaWord)
-        await foundWords
-        console.log(foundWords)
-        await setTypeOfWord(foundWords)
-        return console.log(foundWords)
-      }
+  const fetchTypeOfWord = async() => await dictionaryLookup(vocaWord)
 
     useEffect(() => {
-    fetchTypeOfWord();
+    fetchTypeOfWord().then(foundWords => setTypeOfWord(foundWords));
   }, []);
-
-    // setTimeout(function(){console.log(typeOfWord)}, 2000);
 
   return (
     <div>
@@ -30,7 +22,7 @@ const PopOver = ({vocaWord, dictionaryLookup, uniqueId}) => {
       </Button>
       <Popover placement="right" text="right" isOpen={popoverOpen} target={"popover"+uniqueId} toggle={toggle}>
         <PopoverHeader>{vocaWord}</PopoverHeader>
-        <PopoverBody>{console.log(typeOfWord)}</PopoverBody>
+        <PopoverBody>{typeOfWord && typeOfWord.length > 0 && typeOfWord.map((item, i) => <li key={i}>{item}</li>)}</PopoverBody>
       </Popover>
     </div>
   );
