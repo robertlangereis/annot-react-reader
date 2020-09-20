@@ -4,13 +4,25 @@ import VocaElement from './VocaElement'
 
 export default function Annotations ({ title, author, texts, dictionaryLookup }) {
 
+
+const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+
+const removePunctuation = (string)=> {
+  return string
+    .split('')
+    .filter(function(letter) {
+      return punctuation.indexOf(letter) === -1;
+    })
+    .join('');
+}
+
   const textsConvert = texts => {
     const vocaArray = []
     const longerTextsArray = []
     texts.forEach(item => {
       const wordCount = str => str.split(' ').length
       const wordLength = wordCount(item)
-      if (wordLength < 2) vocaArray.push(item)
+      if (wordLength < 2) vocaArray.push(removePunctuation(item))
       else longerTextsArray.push(item)
     })
     const annotObject = {

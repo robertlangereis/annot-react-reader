@@ -35,7 +35,7 @@ const dictionaryLookup = async vocaWord =>{
       }
       })
       .then((response)=>{
-        console.log(response)
+        return response.data.typeOf
       })
       .catch((error)=>{
         console.log(error)

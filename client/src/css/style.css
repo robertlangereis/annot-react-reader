@@ -190,11 +190,8 @@ body {
       text-align: center; } }
 
 #popover {
-  justify-content: center;
-  display: flex; }
-
-body {
-  background-color: red !important; }
+  margin: 20px;
+  margin-left: 25%; }
 
 body {
   background-color: #212121;

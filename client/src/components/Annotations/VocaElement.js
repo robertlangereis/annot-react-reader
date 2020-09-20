@@ -6,7 +6,7 @@ export default function VocaElement ({ allAnnotations, dictionaryLookup }) {
   return (
     allAnnotations.voca &&
     allAnnotations.voca.map((item, i) => (
-      <PopOver className='annotations__new-words' vocaWord={item} key={i} dictionaryLookup={dictionaryLookup}/>
+      <PopOver className='annotations__new-words' vocaWord={item} key={i} uniqueId={i} dictionaryLookup={dictionaryLookup}/>
     ))
   )
 }
