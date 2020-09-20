@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Cookies from 'universal-cookie'
-import FileGrabber from './components/FileGrabber/FileGrabber'
+import FileGrabber from './components/FileGrabber/fileGrabber'
 
 function App () {
   const cookies = new Cookies()
