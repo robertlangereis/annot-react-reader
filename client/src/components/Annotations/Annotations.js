@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import AnnotationElement from './AnnotationElement'
 import VocaElement from './VocaElement'
 
-export default function Annotations ({ title, author, texts }) {
+export default function Annotations ({ title, author, texts, dictionaryLookup }) {
+
   const textsConvert = texts => {
     const vocaArray = []
     const longerTextsArray = []
@@ -33,14 +34,14 @@ export default function Annotations ({ title, author, texts }) {
         {/* <div>{annotationTexts}</div> */}
         <div className='container'>
           <div className='row'>
-            <div className='col-sm'>
+            <section className='col-sm'>
               <h2 className="annotations__text">Text Annotations</h2>
               <AnnotationElement allAnnotations={textsConvert(texts)} />
-            </div>
-            <div className='col-sm'>
-              <h2 className="annotations__new-words">New words</h2>
-              <VocaElement allAnnotations={textsConvert(texts)} />
-            </div>
+            </section>
+            <section className='col-sm'>
+              <h2 className="annotations__text">New words</h2>
+              <VocaElement allAnnotations={textsConvert(texts)} dictionaryLookup={dictionaryLookup} />
+            </section>
           </div>
         </div>
       </article>

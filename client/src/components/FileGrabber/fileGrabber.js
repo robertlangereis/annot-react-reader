@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useReducer } from 'react'
 import axios from 'axios'
 import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import './fileGrabber.css'
 
 export default function FileGrabber () {
   const [texts, setTexts] = useState(null)
@@ -12,6 +11,7 @@ export default function FileGrabber () {
   const [loaded, setLoaded] = useState(null)
   const [document, setDocument] = useState(null)
   const [convertComplete, setConvertComplete] = useState(false)
+
   const convertUpload = annotationObject => {
     setDocument(annotationObject)
     const array = []
@@ -20,6 +20,34 @@ export default function FileGrabber () {
     })
     return setTexts(array)
   }
+
+const dictionaryLookup = async vocaWord =>{
+    try {
+    // fetch data from a url endpoint
+  const lookupVocaWord = await axios({
+      "method":"GET",
+      "url":`https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
+      "headers":{
+      "content-type":"application/octet-stream",
+      "x-rapidapi-host":"wordsapiv1.p.rapidapi.com",
+      "x-rapidapi-key":"6311a602e1mshf6bc398d21dc896p1eb711jsn5f84c271e538",
+      "useQueryString":true
+      }
+      })
+      .then((response)=>{
+        console.log(response)
+      })
+      .catch((error)=>{
+        console.log(error)
+      });
+  return lookupVocaWord;
+  }
+   catch(error) {
+    console.log("error", error);
+    // appropriately handle the error
+  }
+}
+
 
   const maxSelectFile = files => {
     if (files.length > 1) {
@@ -42,6 +70,25 @@ export default function FileGrabber () {
     }
     return true
   }
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case 'SET_DROP_DEPTH':
+        return { ...state, dropDepth: action.dropDepth }
+      case 'SET_IN_DROP_ZONE':
+        return { ...state, inDropZone: action.inDropZone }
+      case 'ADD_FILE_TO_LIST':
+        return { ...state, fileList: state.fileList.concat(action.files) }
+      default:
+        return state
+    }
+  }
+
+  const [data, dispatch] = useReducer(reducer, {
+    dropDepth: 0,
+    inDropZone: false,
+    fileList: []
+  })
 
   const checkMimeType = files => {
     const isAnnotFile = Array.from(files)
@@ -111,6 +158,45 @@ export default function FileGrabber () {
     else toast.error('upload fail')
   }
 
+  const handleDragEnter = e => {
+    // console.log('e', e);
+    e.preventDefault()
+    e.stopPropagation()
+    dispatch({ type: 'SET_DROP_DEPTH', dropDepth: data.dropDepth + 1 })
+  }
+  const handleDragLeave = e => {
+    // console.log('e', e);
+    e.preventDefault()
+    e.stopPropagation()
+    dispatch({ type: 'SET_DROP_DEPTH', dropDepth: data.dropDepth - 1 })
+    if (data.dropDepth > 0) return
+    dispatch({ type: 'SET_IN_DROP_ZONE', inDropZone: false })
+  }
+  const handleDragOver = e => {
+    // console.log('e', e);
+    e.preventDefault()
+    e.stopPropagation()
+    e.dataTransfer.dropEffect = 'copy'
+    dispatch({ type: 'SET_IN_DROP_ZONE', inDropZone: true })
+  }
+  const handleDrop = e => {
+    e.preventDefault()
+    e.stopPropagation()
+    let files = [...e.dataTransfer.files]
+    // console.log('files', files);
+    onChangeHandler(files)
+    if (files && files.length === 1) {
+      const existingFiles = data.fileList.map(f => f.name)
+      files = files.filter(f => !existingFiles.includes(f.name))
+
+      dispatch({ type: 'ADD_FILE_TO_LIST', files })
+      e.dataTransfer.clearData()
+      dispatch({ type: 'SET_DROP_DEPTH', dropDepth: 0 })
+      dispatch({ type: 'SET_IN_DROP_ZONE', inDropZone: false })
+    }
+  }
+  // const droppedFileElement = document.querySelector(".file__dropped");
+
   return (
     <div className='container'>
       <div className='form-group'>
@@ -119,15 +205,45 @@ export default function FileGrabber () {
       <div className='row'>
         <div className='col-md-6'>
           <form method='post' action='#' id='#'>
-            <div className='form-group files color'>
-              <label htmlFor='files'>Upload Your .annot File* </label>
-              <span className="form-label"> *all the notes are kept in the Annotations folder under your digital editions folder and each book has it's own .annot file</span>
-              <input
-                type='file'
-                name='file'
-                multiple
-                onChange={onChangeHandler}
-              />
+            <div className='form-group file color' name='form'>
+              <label htmlFor='form'>Upload Your .annot File* </label>
+              <span className='form-label'>
+                {' '}
+                *all the notes are kept in the Annotations folder under your
+                digital editions folder and each book has it's own .annot file
+              </span>
+              <label
+                className={
+                  'data.inDropZone'
+                    ? 'drag-drop-zone inside-drag-area file__box'
+                    : 'drag-drop-zone file__box'
+                }
+                htmlFor='upload'
+                onDrop={e => handleDrop(e)}
+                onDragOver={e => handleDragOver(e)}
+                onDragEnter={e => handleDragEnter(e)}
+                onDragLeave={e => handleDragLeave(e)}
+              >
+                <label className='file__upload-text' htmlFor='upload'>
+                  Choose .annot file to convert
+                </label>
+                <input
+                  type='file'
+                  id='upload'
+                  name='upload'
+                  accept='.annot'
+                  required
+                  onChange={onChangeHandler}
+                />
+                {data.fileList.map(f => {
+                  if (selectedFiles)
+                    return (
+                      <li className='file__dropped' key={f.name}>
+                        {f.name}
+                      </li>
+                    )
+                })}
+              </label>
               <div className='form-group'>
                 <Progress max='100' color='success' value={loaded}>
                   {Math.round(loaded, 2)}%
@@ -135,25 +251,25 @@ export default function FileGrabber () {
               </div>
               <button
                 type='button'
-                className='btn btn-success btn-block'
+                className='btn btn-success--darkmode btn-block'
                 onClick={onClickHandler}
               >
                 Upload
               </button>
               <button
                 type='button'
-                className='btn btn-primary btn-block'
+                className='btn btn-primary--darkmode btn-block'
                 onClick={onClickConverter}
               >
                 Convert
               </button>
             </div>
           </form>
-        
         </div>
       </div>
       {convertComplete && texts && (
         <Annotations
+          dictionaryLookup={dictionaryLookup}
           title={document.title}
           author={document.author}
           texts={texts}
