@@ -4,6 +4,7 @@ import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+const { KEY } = require('./config')
 
 export default function FileGrabber () {
   const [texts, setTexts] = useState(null)
@@ -21,33 +22,31 @@ export default function FileGrabber () {
     return setTexts(array)
   }
 
-const dictionaryLookup = async vocaWord =>{
+  const dictionaryLookup = async vocaWord => {
     try {
-    // fetch data from a url endpoint
-  const lookupVocaWord = await axios({
-      "method":"GET",
-      "url":`https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
-      "headers":{
-      "content-type":"application/octet-stream",
-      "x-rapidapi-host":"wordsapiv1.p.rapidapi.com",
-      "x-rapidapi-key":"6311a602e1mshf6bc398d21dc896p1eb711jsn5f84c271e538",
-      "useQueryString":true
-      }
+      // fetch data from a url endpoint
+      const lookupVocaWord = await axios({
+        method: 'GET',
+        url: `https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
+        headers: {
+          'content-type': 'application/octet-stream',
+          'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
+          'x-rapidapi-key': `${KEY}`,
+          useQueryString: true
+        }
       })
-      .then((response)=>{
-        return response.data.typeOf
-      })
-      .catch((error)=>{
-        console.log(error)
-      });
-  return lookupVocaWord;
+        .then(response => {
+          return response.data.typeOf
+        })
+        .catch(error => {
+          console.log(error)
+        })
+      return lookupVocaWord
+    } catch (error) {
+      console.log('error', error)
+      // appropriately handle the error
+    }
   }
-   catch(error) {
-    console.log("error", error);
-    // appropriately handle the error
-  }
-}
-
 
   const maxSelectFile = files => {
     if (files.length > 1) {
