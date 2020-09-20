@@ -1,0 +1,30 @@
+.annotations {
+	&__section {
+        margin: 0 auto;
+        width: 100%;
+        @media screen and (min-width: 767px){
+            width: 80%;
+        }
+    }
+    &__titles{
+        margin: 5% auto;
+    }
+    &__title, &__author, &__text{
+        text-align: center;
+    }
+    &__item{
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        list-style-type: none;
+        border: 2px double #EAEAEA;
+        border-radius: 8px 8px 8px 8px;
+    }
+    &__new-words{
+        padding: 5px;
+        margin-left: 35%;
+        list-style-type: none;
+    // &::before{ 
+    //     content: "\00BB";
+    // }
+    }
+}
