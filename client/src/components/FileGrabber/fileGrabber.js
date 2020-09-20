@@ -4,7 +4,7 @@ import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-const { KEY } = require('./config')
+const { API_KEY, API_HOST } = require('../../config')
 
 export default function FileGrabber () {
   const [texts, setTexts] = useState(null)
@@ -30,8 +30,8 @@ export default function FileGrabber () {
         url: `https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
         headers: {
           'content-type': 'application/octet-stream',
-          'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
-          'x-rapidapi-key': `${KEY}`,
+          'x-rapidapi-host': `${API_HOST}`,
+          'x-rapidapi-key': `${API_KEY}`,
           useQueryString: true
         }
       })
