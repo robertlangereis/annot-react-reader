@@ -21,8 +21,10 @@
     }
     &__new-words{
         padding: 5px;
-        margin-left: 35%;
+        // margin-left: 35%;
+        text-align: center;
         list-style-type: none;
+        cursor: pointer;
     // &::before{ 
     //     content: "\00BB";
     // }

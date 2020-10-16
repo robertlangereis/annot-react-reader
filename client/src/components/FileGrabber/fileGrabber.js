@@ -4,7 +4,8 @@ import { Progress } from 'reactstrap'
 import Annotations from '../Annotations/Annotations'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-const { API_KEY, API_HOST } = require('../../config')
+const { API_KEY, API_HOST } = require('../../config');
+
 
 export default function FileGrabber () {
   const [texts, setTexts] = useState(null)
@@ -25,6 +26,7 @@ export default function FileGrabber () {
   const dictionaryLookup = async vocaWord => {
     try {
       // fetch data from a url endpoint
+      console.log('vocaWord', vocaWord);
       const lookupVocaWord = await axios({
         method: 'GET',
         url: `https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
@@ -36,6 +38,7 @@ export default function FileGrabber () {
         }
       })
         .then(response => {
+          console.log('response', response);
           return response.data.typeOf
         })
         .catch(error => {
