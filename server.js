@@ -42,19 +42,19 @@ app.post('/convert', async (req, res) => {
     fs.readdirSync('./annot').forEach(file => {
       if(file === '.gitignore') return
       const path = `./annot/${file}`
-      return fs.readFile(path, 'utf8', function (err, data) {
+      fs.readFile(path, 'utf8', function (err, data) {
         if (err) return reject(err)
         const json = parser.toJson(data)
         const fileObject = JSON.parse(json)
         // console.log('fileObject', fileObject);
-        // fs.unlink(path, err => {
-        //   if (err) {
-        //     console.error(err)
-        //     return
-        //   }
-        //   //file removed
-        // })
         resolve(fileObject && fileObject.annotationSet)
+      })
+      return fs.unlink(path, err => {
+        if (err) {
+          console.error(err)
+          return
+        }
+        //file removed
       })
     })
   })

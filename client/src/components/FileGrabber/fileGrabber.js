@@ -26,7 +26,7 @@ export default function FileGrabber () {
   const dictionaryLookup = async vocaWord => {
     try {
       // fetch data from a url endpoint
-      console.log('vocaWord', vocaWord);
+      // console.log('vocaWord', vocaWord);
       const lookupVocaWord = await axios({
         method: 'GET',
         url: `https://wordsapiv1.p.rapidapi.com/words/${vocaWord}/typeOf`,
@@ -38,7 +38,7 @@ export default function FileGrabber () {
         }
       })
         .then(response => {
-          console.log('response', response);
+          // console.log('response', response);
           return response.data.typeOf
         })
         .catch(error => {

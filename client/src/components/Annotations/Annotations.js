@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import AnnotationElement from './AnnotationElement'
 import VocaElement from './VocaElement'
+import VocaKeepElement from './VocaKeepElement'
 
 export default function Annotations ({ title, author, texts, dictionaryLookup }) {
 
 
 const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
 const [annotObject, setAnnotObject] = useState();
+const [vocaWordsToKeep, setVocaWordsToKeep] = useState([]);
 
 
 const removePunctuation = (string)=> {
@@ -47,7 +49,6 @@ useEffect(() => {
           <h1 className='annotations__title'>{title}</h1>
           <h3 className='annotations__author'>{author}</h3>
         </div>
-        {/* <div>{annotationTexts}</div> */}
         <div className='container'>
           <div className='row'>
             <section className='col-sm'>
@@ -55,9 +56,23 @@ useEffect(() => {
               {annotObject && annotObject.annotations.map((annotation, i) => <AnnotationElement key={i} annotation={annotation} />)}
             </section>
             <section className='col-sm'>
-              <h2 className="annotations__text">New words</h2>
-              {annotObject && annotObject.voca.map((voca, i) => <VocaElement key={i} voca={voca} dictionaryLookup={dictionaryLookup} />)}
+              <h2 className="annotations__text">New<br/> Words</h2>
+              {annotObject && annotObject.voca.map((voca, i) => <VocaElement 
+                key={i} 
+                voca={voca} 
+                dictionaryLookup={dictionaryLookup} 
+                setVocaWordsToKeep={setVocaWordsToKeep} 
+                vocaWordsToKeep={vocaWordsToKeep}
+                />)}
             </section>
+            {vocaWordsToKeep.length ? <section className='col-sm'>
+              <h2 className="annotations__text">Words To<br/>Keep</h2>
+                {vocaWordsToKeep.map((vocaKeepWord, i) => <VocaKeepElement 
+                key={i} 
+                vocaKeepWord={vocaKeepWord}
+                setVocaWordsToKeep={setVocaWordsToKeep}
+                />)}
+            </section> : null }
           </div>
         </div>
       </article>

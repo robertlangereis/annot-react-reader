@@ -6,17 +6,17 @@
   
   .popovertext {
     visibility: hidden;
-    width: 120px;
+    width: max-content;
+    padding: 0 15px;
     background-color: white;
-    color: #000;
+    color: #0E0E0E;
     text-align: center;
     border-radius: 6px;
-    // padding: 5px 0;
   
     /* Position the popover */
     position: absolute;
     z-index: 1;
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: -9%;
   }
   
