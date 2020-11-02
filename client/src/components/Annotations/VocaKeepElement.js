@@ -8,9 +8,11 @@ export default function VocaKeepElement ({ vocaKeepWord,setVocaWordsToKeep }) {
     vocaKeepWord.length &&
         <div>
           <li className='annotations__new-words' 
-          onClick={()=> setVocaWordsToKeep(vocaKeepWord => {
-            const index = vocaKeepWord.indexOf(vocaKeepWord)
-            return [vocaKeepWord.splice(index, 1)]
+          onClick={()=> setVocaWordsToKeep(oldVocaKeepWord => {
+            const index = oldVocaKeepWord.indexOf(vocaKeepWord)
+            const newVocaKeepWord = [...oldVocaKeepWord]
+            newVocaKeepWord.splice(index, 1)
+            if (index !== -1) return newVocaKeepWord
           })}
           // >{capitalizeWord.charAt(0).toUpperCase() + capitalizeWord.slice(1)}</li>
           >{vocaKeepWord}</li>
